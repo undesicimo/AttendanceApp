@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AttendanceApp/static/css/main.f483e52f.css",
+    "main.js": "/AttendanceApp/static/js/main.88e41e1e.js",
+    "index.html": "/AttendanceApp/index.html",
+    "main.f483e52f.css.map": "/AttendanceApp/static/css/main.f483e52f.css.map",
+    "main.88e41e1e.js.map": "/AttendanceApp/static/js/main.88e41e1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f483e52f.css",
+    "static/js/main.88e41e1e.js"
+  ]
+}
