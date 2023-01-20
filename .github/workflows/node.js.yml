@@ -32,19 +32,19 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Dependencies
       run: |
-       cd ATTENDANCE-APP
+       cd attendance-app
        npm ci
     - name: Build the app
       run: |
-       cd ATTENDANCE-APP
+       cd attendance-app
        npm run build
     - name: Run component tests
       run: |
-       cd ATTENDANCE-APP
+       cd attendance-app
        npm run test
     - name: Start the app
       run: |
-       cd ATTENDANCE-APP
+       cd attendance-app
        npm start &
        npx wait-on --timeout 60000
        
