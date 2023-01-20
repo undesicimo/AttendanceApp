@@ -6,46 +6,41 @@ env:
   SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
   SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
   SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-  
-  
+
 on:
   push:
-    branches: [ "master" ]
+    branches: ['master']
   pull_request:
-    branches: [ "master" ]
+    branches: ['master']
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [18.x]
-      
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Dependencies
-      run: |
-       cd AttendanceApp
-       npm ci
-    - name: Build the app
-      run: |
-       cd AttendanceApp
-       npm run build
-    - name: Run component tests
-      run: |
-       cd AttendanceApp
-       npm run test
-    - name: Start the app
-      run: |
-       cd AttendanceApp
-       npm start &
-       npx wait-on --timeout 60000
-       
-    
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Dependencies
+        run: |
+          cd attendance-app
+          npm ci
+      - name: Build the app
+        run: |
+          cd attendance-app
+          npm run build
+      - name: Run component tests
+        run: |
+          cd attendance-app
+          npm run test
+      - name: Start the app
+        run: |
+          cd attendance-app
+          npm start &
+          npx wait-on --timeout 60000
