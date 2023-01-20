@@ -31,6 +31,7 @@ const Form = ({ name, setName,radio, setRadio ,attendance, setAttendance }) => {
                 名前 </label>
             <input 
                 onChange={handleNameChange}
+                data-testid="nameInput"
                 type="text" 
                 name="fullName" 
                 value= {name}
@@ -55,6 +56,7 @@ const Form = ({ name, setName,radio, setRadio ,attendance, setAttendance }) => {
                 <br/>
             </div>
             <input
+            data-testid="submitButton"
             value="Submit"
             type="submit"
             onClick={handleSubmit}
