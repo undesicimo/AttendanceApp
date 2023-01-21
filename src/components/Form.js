@@ -27,40 +27,46 @@ const Form = ({ name, setName,radio, setRadio ,attendance, setAttendance }) => {
     ref={formRef} >
         <fieldset>
             <legend>ここで入力</legend>
-            <label for="fullName">
-                名前 </label>
-            <input 
-                onChange={handleNameChange}
-                data-testid="nameInput"
-                type="text" 
-                name="fullName" 
-                value= {name}
-                required />
-            <h3>出席する？しない？</h3>
-            <div onChange={handleRadioClick}>
-
-            <label for= "yes">はい</label>
+            <div className="nameInput">
+                <label for="fullName">
+                    名前 </label>
                 <input 
-                 name="option-input"
-                 id="yes"
-                 type="radio" 
-                 value="optionYes"
-                 required />
-           <label for= "no">いいえ</label>
-                <input
-                name="option-input"
-                id="no"
-                type="radio" 
-                value="optionNo"
-                />
-                <br/>
+                    onChange={handleNameChange}
+                    data-testid="nameInput"
+                    type="text" 
+                    name="fullName" 
+                    value= {name}
+                    required />
             </div>
-            <input
-            data-testid="submitButton"
-            value="Submit"
-            type="submit"
-            onClick={handleSubmit}
-            />
+            <div className="attendanceInput">
+                <h3>出席する？しない？</h3>
+                <div onChange={handleRadioClick}>
+                    <label for= "yes">はい</label>
+                        <input 
+                        name="option-input"
+                        id="yes"
+                        type="radio" 
+                        value="optionYes"
+                        required />
+                    <label for= "no">いいえ</label>
+                        <input
+                        name="option-input"
+                        id="no"
+                        type="radio" 
+                        value="optionNo"
+                        />
+                </div>
+            </div>
+            
+            <div className="submitButtonDiv">
+                <input
+                    data-testid="submitButton"
+                    value="送信"
+                    type="submit"
+                    onClick={handleSubmit}
+                    />
+            </div>
+                
         </fieldset>
     </form>
     

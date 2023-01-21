@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import AttendanceList from "./components/AttendaceList";
-import Form from "./components/Form";
+import Form from "./components/Form"
+import Clock from "./components/Clock";
+
 
 const App = () =>{
     const [name,setName] = useState("");
@@ -10,7 +12,10 @@ const App = () =>{
     
     return(
         <div>
+            <div>
             <h1>出席表</h1>
+            <Clock />    
+            </div>
             <Form 
                 name = {name}
                 setName = {setName} 

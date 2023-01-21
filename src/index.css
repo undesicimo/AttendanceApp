@@ -5,90 +5,75 @@ form {
     box-shadow: 2px 2px #fff; /* This adds a subtle white shadow to the form */
 }
 
-input[type="text"], input[type="email"], textarea {
-    background-color: #fff; /* This sets the background color of the form fields to white */
-    border: none; /* This removes the border around the form fields */
-    padding: 10px; /* This adds some space inside the form fields */
-    border-radius: 5px; /* This rounds the corners of the form fields */
-    font-size: 16px; /* This sets the font size of the form fields */
-    color: #333; /* This sets the text color of the form fields */
-    margin-bottom: 20px; /* This adds some space below the form fields */
+
+input[type="text"],textarea {
+    background-color: #fff; 
+    border: none;
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px; /* This adds some space below each form group */
+    margin-bottom: 20px;
+}
+h1 {
+    padding-left: 20px;
+}
+
+h2 {
+    padding-left: 20px;
 }
 
 label {
-    font-size: 16px; /* This sets the font size of the labels */
-    color: #fff; /* This sets the text color of the labels to white */
-    display: block; /* This makes the labels display as block elements so they take up the full width of the form group */
-    margin-bottom: 10px; /* This adds some space below the labels */
+    font-size: 25px; 
+    color: #fff; 
+    display: block;
+    margin-bottom: 10px;
 }
+label[for="yes"] {
+    font-size: 20px;
+}
+
+label[for="no"] {
+    font-size: 20px;
+}
+
 
 body {
-    background-color: #333333; /* This sets the background color of the entire page to dark gray */
-    color: #fff; /* This sets the text color of the entire page to white */
-    font-family: Arial, sans-serif; /* This sets the font family of the entire page */
-}
-
-a {
-    color: #fff; /* This sets the color of all links to white */
-    text-decoration: none; /* This removes the underline from links */
-}
-
-a:hover {
-    color: #333; /* This changes the color of links when the cursor hovers over them to dark gray */
+    background-color: #333333; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
 }
 
 h1, h2, h3 {
-    color: #fff; /* This sets the color of all headings to white */
-    text-shadow: 2px 2px #333; /* This adds a subtle black shadow to the text */
-}
-
-.container {
-    max-width: 1200px; /* This sets a maximum width for the container, to keep the layout from getting too wide on large screens */
-    margin: 0 auto; /* This centers the container on the page */
-}
-
-.box {
-    background-color: #fff; /* This sets the background color of the boxes to white */
-    padding: 20px; /* This adds some space around the content inside the box */
-    border-radius: 10px; /* This rounds the corners of the box */
-    box-shadow: 2px 2px #333; /* This adds a subtle black shadow to the box */
-    margin-bottom: 20px; /* This adds some space below the box */
+    color: #fff; 
+    text-shadow: 2px 2px #333; 
 }
 
 input[type="submit"] {
-    background-color: rgb(249, 249, 249); /* This sets the background color of the submit button to dark gray */
-    color: rgb(12, 12, 12); /* This sets the text color of the submit button to white */
-    border: none; /* This removes the border around the submit button */
-    padding: 10px 15px; /* This sets the padding of the submit button */
-    border-radius: 20px; /* This rounds the corners of the submit button */
-    font-size: 10px; /* This sets the font size of the submit button */
-    cursor: pointer; /* This changes the cursor to a pointer when it hovers over the submit button */
-    font-weight: bold; /* This makes the font bold */
+    padding: 7px 27px;
+    gap: 10px;
+    background: #f8f8f8;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 2px 1px rgb(8, 8, 8);
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(255, 255, 255); /* This changes the background color of the submit button when the cursor hovers over it to white */
-    color: #333; /* This changes the text color of the submit button when the cursor hovers over it to dark gray */
+    background-color: rgb(255, 255, 255); 
+    color: #333; 
 }
 
-.button {
-    background-color: #333; /* This sets the background color of the button to dark gray */
-    color: #fff; /* This sets the text color of the button to white */
-    border: none; /* This removes the border around the button */
-    padding: 10px 20px; /* This sets the padding of the button */
-    border-radius: 5px; /* This rounds the corners of the button */
-    font-size: 16px; /* This sets the font size of the button */
-    cursor: pointer; /* This changes the cursor to a pointer when it hovers over the button */
-    font-weight: bold; /* This makes the font bold */
-    text-align: center; /* This centers the text inside the button */
-    transition: background-color 0.2s ease-in-out; /* This adds a smooth transition effect when the background color of the button changes */
+.nameInput {
+    text-align: center;
 }
-
-.button:hover {
-    background-color: #fff; /* This changes the background color of the button when the cursor hovers over it to white */
-    color: #333; /* This changes the text color of the button when the cursor hovers over it to dark gray */
+.attendanceInput {
+    text-align: center;
+}
+.submitButtonDiv {
+    text-align: center;
 }
