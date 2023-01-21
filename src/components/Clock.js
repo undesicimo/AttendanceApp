@@ -16,7 +16,7 @@ const Clock = () => {
     
     return(
         <div>
-            <h1>{clock.toLocaleTimeString()}</h1>
+            <h2>{clock.toLocaleTimeString('en-US', {hour12: false})}</h2>
         </div>
     )
 }
