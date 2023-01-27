@@ -11,6 +11,7 @@ const Form = ({ name, setName,radio, setRadio ,attendance, setAttendance }) => {
         setRadio(evt.target.value)
     }
 
+
     const handleSubmit = (evt) => {
         evt.preventDefault();
         setAttendance([...attendance,{name:name,attending:radio, id:Math.floor(Math.random() *100) }])
@@ -47,13 +48,15 @@ const Form = ({ name, setName,radio, setRadio ,attendance, setAttendance }) => {
                         id="yes"
                         type="radio" 
                         value="optionYes"
-                        required />
+                        checked={radio ==='optionYes'}
+                         />
                     <label for= "no">いいえ</label>
                         <input
                         name="option-input"
                         id="no"
                         type="radio" 
                         value="optionNo"
+                        checked={radio === 'optionNo'}
                         />
                 </div>
             </div>

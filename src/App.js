@@ -6,7 +6,7 @@ import Clock from "./components/Clock";
 
 const App = () =>{
     const [name,setName] = useState("");
-    const [radio,setRadio] = useState();
+    const [radio,setRadio] = useState("");
     const [attendance, setAttendance] = useState([]);
 
     
